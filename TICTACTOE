@@ -1,0 +1,23 @@
+
+print ("TIC TAC TOE !!")
+
+ligne1 = ["-","-","-"]
+ligne2 = ["-","-","-"]
+ligne3 = ["-","-","-"]
+X = "X"
+O = "O"
+Victoire = False
+Choix= 0
+print (ligne1)
+print (ligne2)
+print (ligne3)
+
+Choix = input()
+
+
+
+
+
+
+#6) Il faudra changé les variables "X" et "O" par "Rouge" et "Jaune" ; dire que le nombre de "Rouge" ou "Jaune" qu'il faut aligner doit être de 4 pour gagner; 
+# Dire au programme de toujours mettre un "rouge" ou "Jaune" au-dessus d'un autre si il y en a déjà un dans la colonne
