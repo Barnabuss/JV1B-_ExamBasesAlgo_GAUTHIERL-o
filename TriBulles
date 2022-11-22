@@ -1,0 +1,64 @@
+print ("TRI A BULLES")
+
+
+print ("EXERCICE 1  ")
+
+Mytable = [1,5,7,9]
+Monscore = 0
+
+Monscore = Mytable[2]
+Mytable[2] = Mytable[1]
+Mytable[1] = Monscore
+
+print (Mytable)
+
+
+
+print ("EXERCICE 2")
+
+Mytable = [7,5,1,3]
+for i in range(len(Mytable)-1):
+    if Mytable[i] > Mytable[i+1]:
+        aux = Mytable[i]
+        Mytable[i] = Mytable[i+1]
+        Mytable[i+1] = aux
+
+print(Mytable)
+
+
+print ("EXERCICE 3")
+
+Mytable = [5,7,6,1,9,3]
+
+for j in range(len(Mytable)):
+    PlusPetit = 100
+    for i in range(j,len(Mytable)):
+        if(Mytable[i]<PlusPetit):
+            PlusPetit = Mytable[i]
+            IndicePetit = i
+    save = Mytable[j]
+    Mytable[j] = Mytable[IndicePetit]
+    Mytable[IndicePetit] = save
+
+print(Mytable)
+
+
+
+
+print ("EXERCICE 4")
+
+Mytable = [5,7,6,1,9,3]
+
+for j in range(len(Mytable)):
+    PlusPetit = 100
+    for i in range(j,len(Mytable)):
+        if(Mytable[i]<PlusPetit):
+            PlusPetit = Mytable[i]
+            IndicePetit = i
+    save = Mytable[j]
+    Mytable[j] = Mytable[IndicePetit]
+    Mytable[IndicePetit] = save
+
+
+print ("L'algorithme est lent car : Au fur et a mesure, la complexité augmente car il y a une relecture du tableau et il y a deux boucles imbriquées")
+
